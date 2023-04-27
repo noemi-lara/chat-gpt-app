@@ -5,7 +5,7 @@ NAME
 VERSION
         1.0
 AUTHOR
-	Hely Salgado 
+	Hely Salgado y Noemí Lara Acono
 
 DESCRIPTION
 
