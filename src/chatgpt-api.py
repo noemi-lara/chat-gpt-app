@@ -15,7 +15,7 @@ DESCRIPTION
 	usando el modelo gpt-3.5-turbo
 
 	Hay dos opciones:
-	new:  crear una nueva conversaci�n con el chat
+	new:  crear una nueva conversación con el chat
 	exit: para salirse de la interfaz
 
 CATEGORY
@@ -43,9 +43,9 @@ from rich import print  # pip install rich
 from rich.table import Table
 
 """
-Webs de interés:
-- Módulo OpenAI: https://github.com/openai/openai-python
-- Documentación API ChatGPT: https://platform.openai.com/docs/api-reference/chat
+Webs de interÃ©s:
+- MÃ³dulo OpenAI: https://github.com/openai/openai-python
+- DocumentaciÃ³n API ChatGPT: https://platform.openai.com/docs/api-reference/chat
 - Typer: https://typer.tiangolo.com
 - Rich: https://rich.readthedocs.io/en/stable/
 """
@@ -55,10 +55,10 @@ def main():
 
     openai.api_key = config.api_key
 
-    print("💬 [bold green]ChatGPT API en Python[/bold green]")
+    print("ðŸ’¬ [bold green]ChatGPT API en Python[/bold green]")
 
     table = Table("Comando", "Descripción")
-    table.add_row("exit", "Salir de la aplicación")
+    table.add_row("exit", "Abandonar la aplicación")
     table.add_row("new", "Crear una nueva conversación")
 
     print(table)
@@ -73,7 +73,7 @@ def main():
         content = __prompt()
 
         if content == "new":
-            print("🆕 Nueva conversación creada")
+            print("ðŸ†• Nueva conversaciÃ³n creada")
             messages = [context]
             content = __prompt()
 
@@ -91,12 +91,12 @@ def main():
 
 
 def __prompt() -> str:
-    prompt = typer.prompt("\n¿Sobre qué quieres hablar? ")
+    prompt = typer.prompt("\nÂ¿Sobre quÃ© quieres hablar? ")
 
     if prompt == "exit":
-        exit = typer.confirm("✋ ¿Estás seguro?")
+        exit = typer.confirm("âœ‹ Â¿EstÃ¡s seguro?")
         if exit:
-            print("👋 ¡Hasta luego!")
+            print("ðŸ‘‹ Â¡Hasta luego!")
             raise typer.Abort()
 
         return __prompt()
