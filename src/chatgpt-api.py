@@ -1,3 +1,38 @@
+```
+NAME
+       chatgpt-api.py
+
+VERSION
+        1.0
+AUTHOR
+	Hely Salgado 
+
+DESCRIPTION
+
+	interfaz CLI para chatgpt
+
+	El programa es una interfaz para interaccionar con chatpgt
+	usando el modelo gpt-3.5-turbo
+
+	Hay dos opciones:
+	new:  crear una nueva conversación con el chat
+	exit: para salirse de la interfaz
+
+CATEGORY
+	chatbots
+
+USAGE
+	python chatgpt-api.py
+
+ARGUMENTS
+
+        none
+
+SEE ALSO
+ 	tomado de : https://gist.github.com/mouredev/58abfbcef017efaf3852e8821564c011
+
+```
+
 ### from https://gist.github.com/mouredev/58abfbcef017efaf3852e8821564c011
 
 ##### librerias
